@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "d3d17d35-9216-40b7-90d7-ce0e99d205bf",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21512543"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/user/get",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"user",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "123445",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "1de1mouser@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "222212",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}/user/create",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"user",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "273"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Jun 2022 20:04:10 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"details\": {\n        \"username\": \"123445\",\n        \"email\": \"1de1mouser@gmail.com\",\n        \"password\": \"$2a$10$fJZrmNuzR.EHC1fdsg5tX.mwJNRSU5LMu6HlkeYB.dZCGt2ZbTDKW\",\n        \"id\": 222212,\n        \"created_at\": \"2022-06-17 20:04:10\",\n        \"updated_at\": \"2022-06-17 20:04:10\"\n    },\n    \"message\": \"User Successfully created\"\n}"
+				}
+			]
+		}
+	]
+}
